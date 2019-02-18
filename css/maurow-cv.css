@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700');
+
+body{
+    font-family: 'Playfair Display', serif;
+}
+.brand-name{
+    font-family: 'Playfair Display', serif;
+    padding: 30px;
+    font-size: 25px;
+}
+ul.navbar-nav.ml-auto.items-spacing li a.nav-link{
+    padding-left: 30px;
+    padding-right: 30px;
+} 
+input.form-control{
+    border-radius: 30px;
+    background: #f1f1f1;
+    border-color: transparent;
+}
