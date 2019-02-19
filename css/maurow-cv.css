@@ -35,3 +35,12 @@ ul li a.nav-link:hover::after{
 ul li.nav-item{
     position: relative;
 }
+a, p, input{
+    font-family: 'Hind', sans-serif;
+}
+.image-position{
+    max-width: 450px;
+    border-radius: 25px;
+    box-shadow: 15px 10px 30px rgba(0,0,0,.10);
+    margin-bottom: 50px;
+}
