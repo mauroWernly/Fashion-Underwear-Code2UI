@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700');
+@import url('https://fonts.googleapis.com/css?family=Hind:400,600');
 
 body{
     font-family: 'Playfair Display', serif;
@@ -16,4 +17,21 @@ input.form-control{
     border-radius: 30px;
     background: #f1f1f1;
     border-color: transparent;
+}
+input.form-control::placeholder{
+    color: black;
+}
+ul li a.nav-link:hover::after{
+    content: "";
+    height: 4px;
+    width: 35%;
+    background: #6666ec;
+    display: block;
+    position: absolute;
+    border-radius: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+ul li.nav-item{
+    position: relative;
 }
