@@ -3,6 +3,14 @@
 
 body{
     font-family: 'Playfair Display', serif;
+    background: #d0bef8;
+}
+.header{
+    background: white;
+    margin-top: 60px;
+}
+.body{
+    background: white;
 }
 .brand-name{
     font-family: 'Playfair Display', serif;
@@ -10,16 +18,19 @@ body{
     font-size: 25px;
 }
 ul.navbar-nav.ml-auto.items-spacing li a.nav-link{
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: 'Hind', sans-serif;
 } 
 input.form-control{
     border-radius: 30px;
     background: #f1f1f1;
     border-color: transparent;
+    max-width: 160px;
 }
 input.form-control::placeholder{
     color: black;
+    font-family: 'Hind', sans-serif;
 }
 ul li a.nav-link:hover::after{
     content: "";
@@ -35,8 +46,8 @@ ul li a.nav-link:hover::after{
 ul li.nav-item{
     position: relative;
 }
-a, p, input{
-    font-family: 'Hind', sans-serif;
+p, input,button, span{
+    font-family: 'Hind', sans-serif!important;
 }
 .image-position{
     max-width: 450px;
@@ -60,6 +71,7 @@ a, p, input{
 }
 p{
     max-width: 400px;
+    font-family: 'Hind', sans-serif;
 }
 h1.title-box::after{
     content: "";
@@ -71,4 +83,65 @@ h1.title-box::after{
     border-radius: 20px;
     left:0;
     bottom: 0;
+}
+h1{
+    font-weight: 600;
+}
+button.explore-btn{
+    align-self: flex-start;
+    width: 220px;
+    height: 56px;
+    background: #6666ec;
+    border-radius: inherit;
+    font-size: 18px;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #6666ec;
+    border-color: #5555f1;
+}
+.product-name{
+    font-weight: bold;
+    font-family: 'Hind', sans-serif;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: auto;
+    margin-right: 130px;
+    position: relative;
+}
+.titlebox-cta{
+    display: flex;
+}
+span.product-name::after{
+    content: "";
+    width: 130px;
+    height: 4px;
+    border-radius: 20px;
+    background: #14213f;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: -15px;
+    bottom: auto;
+    left: auto;
+    transform: translate(100%, -50%);
+}
+.search-img{
+    max-width: 20px;
+    position: absolute;
+    left: auto;
+    right: 20px;
+    opacity: 0.5;
+}
+.icons{
+    max-width: 20px;
+}
+.icons-menu {
+    width: 20px;
+}
+.form-inline{
+    position: relative;
+}
+.navbar-nav.shopping-menu .nav-item {
+    margin-left: 20px;
 }
