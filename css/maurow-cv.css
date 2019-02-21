@@ -1,37 +1,51 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700');
-@import url('https://fonts.googleapis.com/css?family=Hind:400,600');
+@import url('https://fonts.googleapis.com/css?family=Hind:400,600,700');
 
 body{
     font-family: 'Playfair Display', serif;
     background: #d0bef8;
 }
+
 .header{
     background: white;
     margin-top: 60px;
 }
+
 .body{
     background: white;
 }
+
 .brand-name{
     font-family: 'Playfair Display', serif;
     padding: 30px;
     font-size: 25px;
 }
+
 ul.navbar-nav.ml-auto.items-spacing li a.nav-link{
     padding-left: 15px;
     padding-right: 15px;
     font-family: 'Hind', sans-serif;
-} 
+}
+
 input.form-control{
     border-radius: 30px;
     background: #f1f1f1;
     border-color: transparent;
     max-width: 160px;
 }
+
+@media (max-width: 992px){
+    input.form-control{
+        max-width: 100%;
+        width: 100% !important;
+    }
+}
+
 input.form-control::placeholder{
     color: black;
     font-family: 'Hind', sans-serif;
 }
+
 ul li a.nav-link:hover::after{
     content: "";
     height: 4px;
@@ -43,18 +57,43 @@ ul li a.nav-link:hover::after{
     left: 50%;
     transform: translateX(-50%);
 }
+
+@media (max-width:992px){
+    ul li a.nav-link:hover::after {
+        content: "";
+        height: 4px;
+        width: 10%;
+        background: #6666ec;
+        display: block;
+        position: absolute;
+        border-radius: 20px;
+        left: 0;
+        transform: translateX(15px);
+    }
+}
+
 ul li.nav-item{
     position: relative;
 }
+
 p, input,button, span{
     font-family: 'Hind', sans-serif!important;
 }
+
 .image-position{
     max-width: 450px;
     border-radius: 25px;
     box-shadow: 15px 10px 30px rgba(0,0,0,.10);
     margin-bottom: 50px;
 }
+
+@media (max-width:992px){
+    .image-position{
+        max-width: 100%;
+        margin-bottom: 120px;
+    }
+}
+
 .title-box-container{
     height: auto;
     min-height: 380px;
@@ -62,6 +101,7 @@ p, input,button, span{
     display: flex;
     flex-direction: column;
 }
+
 .title-box{
     margin-top: auto;
     font-size: 60px;
@@ -69,10 +109,12 @@ p, input,button, span{
     padding-bottom: 20px;
     margin-bottom: 20px;
 }
+
 p{
     max-width: 400px;
     font-family: 'Hind', sans-serif;
 }
+
 h1.title-box::after{
     content: "";
     height: 4px;
@@ -84,9 +126,11 @@ h1.title-box::after{
     left:0;
     bottom: 0;
 }
+
 h1{
     font-weight: 600;
 }
+
 button.explore-btn{
     align-self: flex-start;
     width: 220px;
@@ -95,11 +139,19 @@ button.explore-btn{
     border-radius: inherit;
     font-size: 18px;
 }
+
+@media (max-width:992px){
+    button.explore-btn{
+        width: 100%;
+    }
+}
+
 .btn-primary:hover {
     color: #fff;
     background-color: #6666ec;
     border-color: #5555f1;
 }
+
 .product-name{
     font-weight: bold;
     font-family: 'Hind', sans-serif;
@@ -109,9 +161,17 @@ button.explore-btn{
     margin-right: 130px;
     position: relative;
 }
+
 .titlebox-cta{
     display: flex;
 }
+
+@media (max-width:992px){
+    .titlebox-cta{
+        padding-bottom: 20px;
+    }
+}
+
 span.product-name::after{
     content: "";
     width: 130px;
@@ -126,6 +186,13 @@ span.product-name::after{
     left: auto;
     transform: translate(100%, -50%);
 }
+
+@media (max-width:992px){
+    span.product-name{
+        display: none;
+    }
+}
+
 .search-img{
     max-width: 20px;
     position: absolute;
@@ -133,17 +200,34 @@ span.product-name::after{
     right: 20px;
     opacity: 0.5;
 }
+
 .icons{
     max-width: 20px;
 }
+
 .icons-menu {
     width: 20px;
 }
+
+@media (max-width:992px){
+    .icons-menu{
+        display: none;
+    }
+}
+
 .form-inline{
     position: relative;
 }
+
 .navbar-nav.shopping-menu .nav-item {
     margin-left: 20px;
+}
+
+@media (max-width:992px){
+    .navbar-nav.shopping-menu .nav-item {
+        margin-left: 10px;
+        margin-top: 5px;
+    }
 }
 .size-container{
     margin-bottom: 0;
@@ -155,24 +239,61 @@ span.product-name::after{
     left: 60px;
 }
 
-.item-number{
+@media (max-width:992px){
+    .size-container{
+        max-width: 100%;
+        left: 0;
+    }
+}
 
+.item-number{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: flex-end;
+    height: 90px;
 }
 
 .size-number{
-    text-decoration: none;
+    font-family: 'Hind', sans-serif;
     color: white;
     opacity: .5;
-    font-size: 32px;
+    margin: 0 20px;
     font-weight: bold;
-    font-family: 'Hind', sans-serif;
-    padding-right: 30px;
-    padding-left: 30px;
+    font-size: 30px;
+    max-height: 24px;
 }
+
+@media (max-width:992px){
+    .size-number {
+        font-family: 'Hind', sans-serif;
+        color: white;
+        opacity: .5;
+        margin: 0 10px;
+        font-weight: bold;
+        font-size: 25px;
+        max-height: 24px;
+    }
+}
+
 .size-number.active{
     font-size: 40px;
     opacity: 1;
+    font-size: 60px;
+    max-height: 84px;
 }
+
+@media (max-width:992px){
+    .size-number.active {
+        font-size: 40px;
+        opacity: 1;
+        font-size: 40px;
+        max-height: 84px;
+    }    
+}
+
 .btn-arrow{
     border-radius: 20px;
 }
@@ -183,21 +304,55 @@ span.product-name::after{
     border-color: #6666ec;
 }
 
+.btn-primary.btn-arrow.btn-transparent{
+    color: #fff;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.btn-primary.btn-arrow.btn-transparent:hover{
+    color: #fff;
+    background-color: #6666ec;
+    border-color: #6666ec;
+    box-shadow: 0px 5px 25px rgba(102, 102, 236, .6);
+}
+
 .img-arrow{
     vertical-align: middle;
     max-width: 15px;
     border-style: none;
     filter: invert(100%);
 }
+
 .btn-arrow:hover{
     box-shadow: 0px 5px 25px rgba(102, 102, 236, .6);
 }
+
 .size-container::before{
     content: "";
-    height: 40px;
-    width: 4px;
-    background: #a1a1bb;
-    display: block;
+    height: 25px;
+    width: 2px;
+    background: rgba(255, 255, 255, .5);
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    right: auto;
+    left: 26px;
+    border-radius: 50px 50px 0 0;
+}
+
+.size-container::after{
+    content: "SCROLL";
+    position: absolute;
+    color: rgba(255, 255, 255, 0.6);
+    top: auto;
+    left: 7px;
+    right: auto;
+    bottom: 44px;
+    transform: rotate(-90deg);
+    font-size: 11px;
+    font-family: 'Hind', sans-serif;
+    letter-spacing: 1px;
 }
 .invert-arrow{
     transform:rotate(180deg);
